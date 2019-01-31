@@ -7,6 +7,11 @@ public class ListNode {
     public ListNode next;
     ListNode(int x) { val = x; next = null; }
 
+    public ListNode(int val, ListNode next) {
+        this.val = val;
+        this.next = next;
+    }
+
     public static ListNode create(List<Integer> values) {
         if (values.isEmpty()) return null;
         ListNode head = new ListNode(values.get(0));
