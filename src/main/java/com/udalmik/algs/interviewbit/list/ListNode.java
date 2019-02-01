@@ -1,5 +1,6 @@
 package com.udalmik.algs.interviewbit.list;
 
+import java.util.Arrays;
 import java.util.List;
 
 public class ListNode {
@@ -55,5 +56,9 @@ public class ListNode {
             b = b.next;
         }
         return a == b;
+    }
+
+    public static ListNode create(Integer ... i) {
+        return create(Arrays.asList(i));
     }
 }
