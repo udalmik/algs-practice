@@ -96,13 +96,5 @@ class PrimeNumberDecomposer {
 
     }
 
-    public static void main(String[] args) {
-        getPrimeFactors(100L);
-        getUniquePrimeFactorsWithCount(100L);
-        getAllPrimeFactors(100);
-        getPrimeFactorPotencies(100);
-    }
-
-
 }
 
