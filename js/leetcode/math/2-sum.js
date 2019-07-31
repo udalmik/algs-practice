@@ -5,13 +5,16 @@
  */
 const twoSum = (nums, target) => {
     const map = {};
+    let result = [];
     nums.forEach((n, idx) => {
         const diff = target - n;
         const key = diff.toString();
         if (map[key] !== undefined) {
-            return [idx, map[key][1]];
+            result = [idx, map[key][1]];
+            return false;
         }
         map[n.toString()] = [n, idx];
+        return true;
     });
-    return [];
+    return result;
 };
