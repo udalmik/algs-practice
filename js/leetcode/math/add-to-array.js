@@ -9,6 +9,13 @@ var addToArrayForm = function(a, k) {
         .reverse();
 };
 
+var addStrings = function(num1, num2) {
+    return sumReversedArrays(
+        [...num1].map(Number).reverse(),
+        [...num2].map(Number).reverse()
+    ).reverse().join("");
+};
+
 const sumReversedArrays = (a, b) => {
     
     if (a.length === 0) return b;
