@@ -24,3 +24,19 @@ var levelOrder = function(root, res = [], level = 0) {
 
     return res;
 };
+
+/**
+ * @param {TreeNode} root
+ * @return {number[]}
+ */
+var averageOfLevels = function(root) {
+    
+};
+
+/**
+ * @param {TreeNode} root
+ * @return {number[][]}
+ */
+var levelOrderBottom = function(root) {
+    return levelOrder(root).reverse();
+};
