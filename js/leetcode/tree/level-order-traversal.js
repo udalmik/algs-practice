@@ -30,8 +30,14 @@ var levelOrder = function(root, res = [], level = 0) {
  * @return {number[]}
  */
 var averageOfLevels = function(root) {
-    
+    return levelOrder(root).map(avg);
 };
+
+const avg = arr => {
+    const count = arr.length;
+    const sum = arr.reduce((prev, curr) => prev + curr, 0);
+    return sum / count;
+}
 
 /**
  * @param {TreeNode} root
