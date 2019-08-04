@@ -25,6 +25,10 @@ var levelOrder = function(root, res = [], level = 0) {
     return res;
 };
 
+var largestValues = function(root) {
+    levelOrder(root).map(arr => Math.max(...arr));
+};
+
 /**
  * @param {TreeNode} root
  * @return {number[]}
