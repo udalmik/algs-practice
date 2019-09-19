@@ -5,6 +5,6 @@ const generateParenthesis = require('./backtracking/generate-parenthesis');
 
 const exist = require('./dynamic/find-word');
 
-const rob = require('./dynamic/rob-house');
+const next = require('./backtracking/next-permutation')
 
-console.log(rob([2,1]));
+console.log(next([1,3,2]));
