@@ -7,4 +7,6 @@ const exist = require('./dynamic/find-word');
 
 const next = require('./backtracking/next-permutation')
 
-console.log(next([1,3,2]));
+const findMedian = require('./array/median-of-two-sorted-arrays');
+
+console.log(findMedian([1,3], []));
