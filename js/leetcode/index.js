@@ -5,8 +5,9 @@ const generateParenthesis = require('./backtracking/generate-parenthesis');
 
 const exist = require('./dynamic/find-word');
 
-const next = require('./backtracking/next-permutation')
+const sum = require('./backtracking/combination-sum')
 
 const findMedian = require('./array/median-of-two-sorted-arrays');
 
-console.log(findMedian([1,3], []));
+console.log(sum([2,3,6,7]
+    ,5));
