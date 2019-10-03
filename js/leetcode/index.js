@@ -9,5 +9,6 @@ const sum = require('./backtracking/combination-sum')
 
 const findMedian = require('./array/median-of-two-sorted-arrays');
 
-console.log(sum([2,3,6,7]
-    ,5));
+const calculate = require('./math/basic-calculator')
+
+console.log(calculate("3 + 2 * 2"));
